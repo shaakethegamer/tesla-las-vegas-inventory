@@ -21,7 +21,7 @@ jobs:
           python-version: '3.12'
       - name: Check inventory
         env:
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOPIC: ${{ secrets.NTFY_SECRET }}
           TESLA_ZIP: '89109'
         run: python monitor.py
       - name: Save seen VIN fingerprints
